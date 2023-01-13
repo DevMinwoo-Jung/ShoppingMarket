@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import { store } from '../redux-toolkit/app'
 import { Provider } from 'react-redux'
 import { Counter } from '../pages/reduxEx/Counter'
+import Ex from './Components/ex'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Counter/>
+      <Ex/>
     </Provider>
   )
 }
