@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { store } from '../redux-toolkit/app'
 import { Provider } from 'react-redux'
 import LoginForm from './components/LoginForm/LoginForm'
+import '../utils/lang/i18n'
 
 export default function Home() {
   return (
