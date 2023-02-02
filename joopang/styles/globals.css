@@ -4,6 +4,9 @@
 html, #app, #app>div {
   height: 100vh;
   }
+body {
+  background-color: gray;
+}
 :root {
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
