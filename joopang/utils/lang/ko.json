@@ -1,3 +1,5 @@
 {
-  "LOGIN": "LOGIN"
+  "LOGIN": "로그인하기",
+  "INPUTID": "아이디",
+  "INPUTPW": "비밀번호"
 }

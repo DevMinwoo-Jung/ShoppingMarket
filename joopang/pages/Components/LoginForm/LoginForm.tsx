@@ -2,6 +2,7 @@ import useInput from '@/utils/customHooks/useInput';
 import Image from 'next/image';
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import Label from '../Label';
 
 
 const LoginForm = () => {
@@ -15,9 +16,11 @@ const LoginForm = () => {
       <Image width={200} height={200} className="m-auto" src="/Joopang_logo.png" alt="" />
       <div className='block'>
         <div className='mt-4'>
+          <Label title={t('INPUTID')}/>
           <input type="text" value={userId} onChange={onChangeUserId}/>
         </div>
         <div className='mt-4'>
+          <Label title={t('INPUTPW')}/>
           <input type="text" value={password} onChange={onChangePassword}/>
 
         </div>

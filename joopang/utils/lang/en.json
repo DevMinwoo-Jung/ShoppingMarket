@@ -1,3 +1,5 @@
 {
-  "LOGIN": "LOGIN"
+  "LOGIN": "LOGIN",
+  "INPUTID": "USER ID",
+  "INPUTPW": "USER PW"
 }
