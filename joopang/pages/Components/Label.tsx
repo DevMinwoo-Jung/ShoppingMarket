@@ -8,8 +8,8 @@ const Label:FC<LabelInterface> = (props) => {
   const { title } = props;
 
   return (
-    <div className="w-3/4 text-center">
-      <p className="text-base">{title}</p>
+    <div className="w-full text-center text-lg leading-10 cursor-pointer">
+      <p>{title}</p>
     </div>
   )
 }
