@@ -24,12 +24,12 @@ const LoginForm = () => {
         <div className='w-4/5 pl-2 rounded-2xl flex m-auto bg-orange-50 mt-4 h-10'>
           <Label title='로그인하기'/>
         </div>
-        <div className='w-4/5 m-auto flex mt-2 mb-2'>
-          <div className='bg-slate-400 w-2/5 h-1 pt-1/2'/>
-          <div className='rounded-full w-1/5'>
+        <div className='w-4/5 m-auto flex mt-2 mb-2 relative'>
+          <div className='bg-slate-400 w-2/5 h-1 align-middle top-1/2 absolute'/>
+          <div className='rounded-full w-1/5 m-auto'>
             OR
           </div>
-          <div className=' bg-slate-400 w-2/5 h-1 mt-1/2'/>
+          <div className=' bg-slate-400 w-2/5 h-1 align-middle top-1/2 absolute right-0'/>
         </div>
         <div className='mt-4 mb-4'>
           <SocialLogin title={t('GOOGLELOGIN')} src={'/google.png'}/>
