@@ -8,8 +8,10 @@ import SocialLogin from '../SocialLogin';
 
 const LoginForm = () => {
   const { t } = useTranslation()
-  const [userId, onChangeUserId] = useInput('')
-  const [password, onChangePassword] = useInput('')
+  const [userId, onChangeUserId] = useInput('');
+  const [password, onChangePassword] = useInput('');
+
+  
 
   return (
     <div className='sm:w-80 md:w-96 lg:w-120 h-auto m-auto content-center-center text-center mt-32 rounded-md	overflow-y-hidden border-solid border-2'>
