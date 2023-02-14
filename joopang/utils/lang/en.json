@@ -1,5 +1,9 @@
 {
   "LOGIN": "LOGIN",
   "INPUTID": "USER ID",
-  "INPUTPW": "USER PW"
+  "INPUTPW": "USER PW",
+  "USERID": "ID",
+  "USERPW": "Password",
+  "USERNAME": "Nick Name",
+  "SINGUP": "Sign Up"
 }

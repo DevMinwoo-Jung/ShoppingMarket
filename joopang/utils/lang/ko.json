@@ -1,5 +1,9 @@
 {
   "LOGIN": "로그인하기",
   "INPUTID": "아이디",
-  "INPUTPW": "비밀번호"
+  "INPUTPW": "비밀번호",
+  "USERID": "아이디",
+  "USERPW": "비밀번호",
+  "USERNAME": "활동명",
+  "SINGUP": "회원가입"
 }
