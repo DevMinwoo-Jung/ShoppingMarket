@@ -5,5 +5,7 @@
   "USERID": "ID",
   "USERPW": "Password",
   "USERNAME": "Nick Name",
-  "SINGUP": "Sign Up"
+  "SINGUP": "Sign Up",
+  "LOGOUT": "Logout",
+  "MYINFO": "My Info"
 }
