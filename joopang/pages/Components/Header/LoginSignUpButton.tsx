@@ -13,8 +13,8 @@ const LoginSignUpButton:FC<ILoginSignUpButton> = (props) => {
   }
 
   return (
-    <div>
-      <button onClick={showForm}>{title}</button>
+    <div className='m-2'>
+      <button className='text-sm' onClick={showForm}>{title}</button>
     </div>
   )
 }
