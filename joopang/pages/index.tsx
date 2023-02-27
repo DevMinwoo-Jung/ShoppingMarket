@@ -4,6 +4,7 @@ import LoginForm from './components/LoginForm/LoginForm'
 import '../utils/lang/i18n'
 import SignupForm from './components/SignupForm/SignupForm'
 import Header from './components/Header/Header'
+import Products from './components/Products/Products'
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       </Head>
       {/* <LoginForm/> */}
       {/* <SignupForm/> */}
-      <Header/>    
+      {/* <Header/>     */}
+      <Products/>
     </>
   )
 }
