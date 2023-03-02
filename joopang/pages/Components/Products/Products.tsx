@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import Content from './Content';
+import ProductImg from './ProductImg';
 
 interface IProductsInfo {
   id: string;
@@ -8,6 +10,7 @@ interface IProductsInfo {
   brand: string;
   updateDate: string;
   src: string;
+  desc: string;
 }
 
 const Products = () => {
@@ -32,18 +35,16 @@ const Products = () => {
     <div className='w-3/4 h-3/4 m-auto top-14 border'>
       {
         ProductsInfo.map((element:IProductsInfo) => {
+          
+          const { id, name, brand, desc, src } = element;
+          
           return (
             <>
               {
-                <>
-                  <p>{element.id}</p>
-                  <p>{element.name}</p>
-                  <p>{element.price}</p>
-                  <p>{element.stock}</p>
-                  <p>{element.brand}</p>
-                  <p>{element.updateDate}</p>
-                  <p>{element.src}</p>
-                </>
+                <div id={id}>
+                  <Content name={name} brand={brand} desc={desc} />
+                  <ProductImg src={src} name={name}/>
+                </div>
               }
             </>
           )
