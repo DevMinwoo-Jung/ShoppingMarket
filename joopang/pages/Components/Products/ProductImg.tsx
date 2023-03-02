@@ -11,7 +11,7 @@ const ProductImg:FC<IProductImg> = (props) => {
   const { src, name } = props;
 
   return (
-    <div className='w-1/4'>
+    <div>
       <Image className='w-full h-full' width={100} height={100} src={src} alt={name}/>
     </div>
 

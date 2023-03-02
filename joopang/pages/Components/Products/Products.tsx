@@ -32,7 +32,7 @@ const Products = () => {
   }, [])
 
   return (
-    <div className='w-3/4 h-3/4 m-auto top-14 border'>
+    <div className='w-3/4 h-3/4 m-auto top-14 border flex-wrap flex'>
       {
         ProductsInfo.map((element:IProductsInfo) => {
           
@@ -41,9 +41,9 @@ const Products = () => {
           return (
             <>
               {
-                <div id={id}>
-                  <Content name={name} brand={brand} desc={desc} />
+                <div className='ml-2 mr-2' id={id}>
                   <ProductImg src={src} name={name}/>
+                  <Content name={name} brand={brand} desc={desc} />
                 </div>
               }
             </>
