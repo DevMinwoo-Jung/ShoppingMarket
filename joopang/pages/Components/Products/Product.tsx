@@ -13,21 +13,12 @@ interface IProduct {
 
 const Product:FC<IProduct> = (props) => {
   
-  const [isDetail, setIsDetail] = useState(false);
-
-  const showDetail = () => {
-    setIsDetail((prev) => !prev);
-  }
-
   const { id, name, brand, desc, src } = props;
 
   return (
-    <div key={id} onClick={showDetail}>
+    <div key={id}>
       <ProductImg src={src} name={name}/>
       <Content name={name} brand={brand} desc={desc} />
-      {
-        isDetail && <ProductDetail/>
-      }
     </div>
   )
 }
