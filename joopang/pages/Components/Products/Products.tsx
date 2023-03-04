@@ -33,7 +33,7 @@ const Products = () => {
 
 
   return (
-    <div className='w-3/4 h-3/4 m-auto top-14 border flex-wrap flex'>
+    <div className='w-3/4 h-3/4 m-auto top-14 border flex-wrap flex' key={Math.random()}>
       {
         ProductsInfo.map((element:IProductsInfo) => {
           
@@ -41,7 +41,7 @@ const Products = () => {
           return (
             <>
               {
-                <div className='w-1/4 pl-2 pr-2' id={id}>
+                <div className='w-1/4 pl-2 pr-2'>
                   <Product id={id} name={name} brand={brand} desc={desc} src={src}/>
                 </div>
               }
