@@ -1,17 +1,9 @@
+import { IProductsInfo } from '@/utils/interface';
 import React, { useEffect, useState } from 'react'
 import Product from './Product'
 import ProductDetail from './ProductDetail';
 
-interface IProductsInfo {
-  id: string;
-  name: string;
-  price: string;
-  stock: string;
-  brand: string;
-  updateDate: string;
-  src: string;
-  desc: string;
-}
+
 
 const Products = () => {
 
@@ -54,7 +46,7 @@ const Products = () => {
                 </div>
               }
               {
-                isDetail && <ProductDetail/>
+                isDetail && <ProductDetail element={element}/>
               }
             </>
           )
