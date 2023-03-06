@@ -41,7 +41,7 @@ const SignupForm = () => {
             value={userName} 
             onChange={onChangeUserName}/>
         </div>
-      <div className='block' onClick={submitForm}>
+      <div className='block border-2 mx-1 my-2' onClick={submitForm}>
         <Label title={t('SINGUP')}/>
       </div>
     </div>
