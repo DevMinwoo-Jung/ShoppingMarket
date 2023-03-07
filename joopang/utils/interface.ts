@@ -8,3 +8,7 @@ export interface IProductsInfo {
   src: string;
   desc: string;
 }
+
+export interface IProductDetail extends IProductsInfo {
+  element: IProductDetail
+}

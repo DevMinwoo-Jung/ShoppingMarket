@@ -1,7 +1,4 @@
 # ShoppingMarket
-
-20230109 시작
-
 Goal
 
 Front
