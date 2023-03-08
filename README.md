@@ -10,7 +10,7 @@ Back
 Nodejs
 
 State Management
-Redux toolkit
+Context
 
 Style
 tailwind.css
