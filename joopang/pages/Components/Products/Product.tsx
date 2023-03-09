@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import React, { FC, useState } from 'react'
 import Content from './Content'
-import ProductDetail from './ProductDetail'
 import ProductImg from './ProductImg'
 
 interface IProduct {
@@ -17,6 +17,10 @@ const Product:FC<IProduct> = (props) => {
 
   return (
     <div key={id}>
+      <Link href={{
+        pathname: '/[Detail]',
+        query: { id }
+      }}/>
       <ProductImg src={src} name={name}/>
       <Content name={name} brand={brand} desc={desc} />
     </div>

@@ -1,20 +1,12 @@
 import { IProductsInfo } from '@/utils/interface';
 import React, { useEffect, useState } from 'react'
 import Product from './Product'
-import ProductDetail from './ProductDetail';
 
 
 
 const Products = () => {
 
   const [ProductsInfo, setProductsInfo] = useState([]);
-
-  const [isDetail, setIsDetail] = useState(false);
-
-  const showDetail = () => {
-    setIsDetail((prev) => !prev);
-  }
-
 
   useEffect(() => {
     fetch('/mock/products.json')
@@ -41,12 +33,9 @@ const Products = () => {
           return (
             <>
               {
-                <div className='w-1/4 pl-2 pr-2' onClick={showDetail}>
+                <div className='w-1/4 pl-2 pr-2'>
                   <Product id={id} name={name} brand={brand} desc={desc} src={src}/>
                 </div>
-              }
-              {
-                isDetail && <ProductDetail element={element}/>
               }
             </>
           )

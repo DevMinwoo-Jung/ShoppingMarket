@@ -6,7 +6,7 @@ import SignupForm from './SignupForm/SignupForm'
 const Main = () => {
   return (
     <div className='w-full h-full'>
-      <SignupForm/>
+      <Products/>
     </div>
   )
 }
