@@ -17,13 +17,16 @@ const Product:FC<IProduct> = (props) => {
 
   return (
     <div key={id}>
-      <Link href={{
-        pathname: '/[Detail]',
-        query: { id }
-      }}/>
+      <Link
+        href={{ pathname: '/detail', query: { tag: id } }}
+        as={`/detail/Detail/${id}`}
+        key={id}
+      >
       <ProductImg src={src} name={name}/>
-      <Content name={name} brand={brand} desc={desc} />
+      <Content name={name} brand={brand} desc={desc} />      
+      </Link>
     </div>
+
   )
 }
 

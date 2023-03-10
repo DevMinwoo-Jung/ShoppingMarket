@@ -2,8 +2,6 @@ import { IProductsInfo } from '@/utils/interface';
 import React, { useEffect, useState } from 'react'
 import Product from './Product'
 
-
-
 const Products = () => {
 
   const [ProductsInfo, setProductsInfo] = useState([]);
@@ -34,7 +32,7 @@ const Products = () => {
             <>
               {
                 <div className='w-1/4 pl-2 pr-2'>
-                  <Product id={id} name={name} brand={brand} desc={desc} src={src}/>
+                  <Product key={id} id={id} name={name} brand={brand} desc={desc} src={src}/>
                 </div>
               }
             </>
